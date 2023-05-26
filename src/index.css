@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-gradient {
+    background-image: url("./assets/wallpaperflare.com_wallpaper (1) - Copy.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.animate-shiver {
+    animation-name: shiver;
+    animation-duration: 300ms;
+}
+
+@keyframes shiver {
+    0% {
+        transform: translateX(-5px);
+    }
+    25% {
+        transform: translateX(5px);
+    }
+    50% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
